@@ -43,7 +43,7 @@ function Home() {
 			<div className="col-8">
 			<ul className="list-group">
 				{tasks.map((task, index) => (<li className="list-group-item m-0 d-inline-flex justify-content-between" key={index}>{task}<button type="button" onClick={() =>{removeTask(index)}} className="btn text-danger" ><i className="fa-solid fa-x fa-lg "></i></button></li>))}
-				<li className="list-group-item m-0 text-start text-secondary list-group-item-dark">{tasks.length === 1 ? tasks.length + " item on the list" : tasks.length + " items on the list"}</li>
+				<li className="list-group-item m-0 text-start text-secondary list-group-item-dark">{tasks.length < 2 ? tasks.length < 1 ? "No Tasks in the list" : tasks.length + " Task in the list" : tasks.length + " Tasks in the list"}</li>
 		</ul>
 			</div>
 		</div>
