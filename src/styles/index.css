@@ -1,10 +1,15 @@
 
-.btn:hover{
+#listItem:hover :first-child{
     color: red;
+    animation: fadein 0.8s;
 }
-.btn{
+#listItem :first-child{
     color: white;
 }
 .h1{
     color: lightcoral;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
